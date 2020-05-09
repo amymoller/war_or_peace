@@ -17,14 +17,10 @@ end
     add_suit = ["clubs", "hearts", "diamonds", "spades"]
   end
 
-
-
   def add_value
     @value = value
     add_value = ["jack", "queen", "king", "ace"]
   end
-
-
 
   def add_rank
     @rank = rank
