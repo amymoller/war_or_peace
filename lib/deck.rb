@@ -1,5 +1,6 @@
 class Deck
 
+
   attr_reader :cards
 
   def initialize(cards)
@@ -37,15 +38,8 @@ class Deck
     @cards.insert(card)
     @cards << card
   end
- 
-
-
-
-
-
-
-
-
 
 
 end
+
+require 'pry'; binding.pry
