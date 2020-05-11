@@ -1,14 +1,38 @@
 class Deck
 
-  attr_reader :card
+  attr_reader :cards
 
-  def initialize
+  def initialize(cards)
     @deck = []
-    @card = card
+    @cards = cards
 
     card = Card.new(suit, value, rank)
-    @deck << card
+    @deck << cards
   end
+
+  def rank_of_card_at(card)
+    rank.index(card.rank)
+
+  end
+
+  def high_ranking_cards(card)
+    if @rank >= 11
+      return cards[]
+    else
+      nil
+  end
+
+  def percent_high_ranking(card)
+    if @rank >=11
+      return 
+    else
+      nil
+  end
+
+
+
+
+
 
 
 
