@@ -24,15 +24,20 @@ class Deck
 
   def percent_high_ranking(card)
     if @rank >=11
-      return 
+      return 3.as_percentage_of(13)
     else
       nil
   end
 
+  def draw!(card)
+    @cards.shift
+  end
 
-
-
-
+  def add_card_to_bottom(card)
+    @cards.insert(card)
+    @cards << card
+  end
+ 
 
 
 
